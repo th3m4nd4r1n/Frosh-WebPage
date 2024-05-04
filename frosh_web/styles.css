@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+box-sizing: border-box;
+background-image: url(./efe-kurnaz-RnCPiXixooY-unsplash.jpg);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    /* margin-bottom: 10vw; */
+    height: 30vh;
+   
+
+}
+h1{
+   font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: rgb(218, 54, 36);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+.expand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.container{
+    display:flex;
+    width: 90vw;
+}
+.panel{
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 80vw;
+    flex: 0.5;
+    border-radius: 50px;
+    height: 80vh;
+    cursor: pointer;
+    color: #fff;
+    margin: 10px;
+    -webkit-transition: all 500ms ease-in;
+}
+.panel h3{
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;   
+    position: absolute;
+    bottom: 20px;
+    /* top: 67vh; */
+    left: 20px;
+    opacity: 0;
+
+}
+.panel.active
+{
+    flex: 5;
+    
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+.container{
+    width: 100vw;
+    
+}
+.panel:nth-of-type(4),
+.panel:nth-of-type(5){
+    display: none;
+}
+}
+.about_center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#about h2{
+    text-align: center;
+    display: block;
+    top: 10%;
+    color: rgb(218, 54, 36);
+    
+}
+
+#about{
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 50px;
+    width:70vw;
+    background-color: black;
+    color: white;
+}
+#about p{
+    text-align: center;
+    height: 70%;
+    padding-bottom: 2%;
+
+}
+.team_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 50px;
+    width:70vw;
+    background-color: black;
+    color: white;
+}
+.card h2{  text-align: center;
+    display: block;
+    top: 10%;
+    color: rgb(218, 54, 36);
+
+}
+.card p{
+    text-align: center;
+    height: 70%;
+    padding-bottom: 2%;
+}
+.btn_center{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+
+button{
+    height: 50px;
+    width: 170px;
+    background-color: greenyellow;
+    color: rgb(218, 54, 36);
+    border-radius: 50px;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1vw;
+
+
+}
